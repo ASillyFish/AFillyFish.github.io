@@ -208,8 +208,7 @@
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最近，在学习《C++ primer》过程中有点混淆<strong>默认初始化</strong>和<strong>值初始化</strong>两个概念，是由于早期在接触他们时，下意识的没有区分，甚至当作一回事。在最近的内容里，其区别渐渐凸显。书里面没有明确的定义区分，实际使用时要考虑的关键区别：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>默认初始化：</strong>对象可能产生未定义的值（是否绝对尚待确定，例如类类型（定义了默认构造函数）的默认初始化是否属于值初始化等）。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>值初始化</strong>：对象的值是确定（预设）的。</p>
-<p>##主要涉及的情形：</p>
-<p><strong>值初始化：</strong></p>
+<h2 id="主要涉及的情形："><a href="#主要涉及的情形：" class="headerlink" title="主要涉及的情形："></a>主要涉及的情形：</h2><p><strong>值初始化：</strong></p>
 <ol>
 <li><p>数组初始化时初始值数量小于维度，剩下的元素会进行值初始化；</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; int array[10] = &#123;1, 2, 3&#125;; &#125;	//array[3]到array[9]值初始化为0</span><br></pre></td></tr></table></figure>
