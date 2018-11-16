@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="c++,学习," />
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="sillyfish&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="拷贝构造函数定义一个构造函数的第一个参数是自身类类型的引用（通常为const的），且任何额外参数都有默认值，则此构造函数是拷贝构造函数：12345class Foo&amp;#123;public:    Foo();              //默认构造函数    Foo(const Foo&amp;amp;);    //拷贝构造函数&amp;#125;; 合成拷贝构造函数在我们没有为一个类定义一个拷贝构造函数（即">
+<meta name="keywords" content="c++,学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++学习：拷贝、赋值与销毁">
+<meta property="og:url" content="http://yoursite.com/2018/11/16/C-学习：拷贝、赋值与销毁/index.html">
 <meta property="og:site_name" content="sillyfish&#39;s blog">
+<meta property="og:description" content="拷贝构造函数定义一个构造函数的第一个参数是自身类类型的引用（通常为const的），且任何额外参数都有默认值，则此构造函数是拷贝构造函数：12345class Foo&amp;#123;public:    Foo();              //默认构造函数    Foo(const Foo&amp;amp;);    //拷贝构造函数&amp;#125;; 合成拷贝构造函数在我们没有为一个类定义一个拷贝构造函数（即">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-16T14:23:21.325Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sillyfish&#39;s blog">
+<meta name="twitter:title" content="C++学习：拷贝、赋值与销毁">
+<meta name="twitter:description" content="拷贝构造函数定义一个构造函数的第一个参数是自身类类型的引用（通常为const的），且任何额外参数都有默认值，则此构造函数是拷贝构造函数：12345class Foo&amp;#123;public:    Foo();              //默认构造函数    Foo(const Foo&amp;amp;);    //拷贝构造函数&amp;#125;; 合成拷贝构造函数在我们没有为一个类定义一个拷贝构造函数（即">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/11/16/C-学习：拷贝、赋值与销毁/"/>
 
 
 
 
 
-  <title>sillyfish's blog</title>
+  <title>C++学习：拷贝、赋值与销毁 | sillyfish's blog</title>
   
 
 
@@ -140,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-  page-home">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -234,9 +238,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -266,9 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/16/C-学习：拷贝、赋值与销毁/" itemprop="url">C++学习：拷贝、赋值与销毁</a></h1>
+          <h1 class="post-title" itemprop="name headline">C++学习：拷贝、赋值与销毁</h1>
         
 
         <div class="post-meta">
@@ -340,9 +342,7 @@
       
 
       
-        
-          
-            <h2 id="拷贝构造函数"><a href="#拷贝构造函数" class="headerlink" title="拷贝构造函数"></a>拷贝构造函数</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>一个<strong>构造函数</strong>的第一个参数是自身类类型的引用（通常为const的），且任何额外参数都有默认值，则此构造函数是拷贝构造函数：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Foo</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    Foo();              <span class="comment">//默认构造函数</span></span><br><span class="line">    Foo(<span class="keyword">const</span> Foo&amp;);    <span class="comment">//拷贝构造函数</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+        <h2 id="拷贝构造函数"><a href="#拷贝构造函数" class="headerlink" title="拷贝构造函数"></a>拷贝构造函数</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>一个<strong>构造函数</strong>的第一个参数是自身类类型的引用（通常为const的），且任何额外参数都有默认值，则此构造函数是拷贝构造函数：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Foo</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    Foo();              <span class="comment">//默认构造函数</span></span><br><span class="line">    Foo(<span class="keyword">const</span> Foo&amp;);    <span class="comment">//拷贝构造函数</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
 <h3 id="合成拷贝构造函数"><a href="#合成拷贝构造函数" class="headerlink" title="合成拷贝构造函数"></a>合成拷贝构造函数</h3><p>在我们没有为一个类定义一个拷贝构造函数（即使存在其他构造函数），编译器会合成一个拷贝构造函数。</p>
 <ul>
 <li>合成的拷贝构造函数可能是=deleted的，会阻止拷贝；</li>
@@ -353,8 +353,6 @@
 <p><strong>（2）将一个对象作为实参传递给一个非引用类型的形参</strong><br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">(<span class="built_in">std</span>::<span class="built_in">string</span>)</span></span>;</span><br><span class="line"><span class="comment">/*其他语段*/</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">string</span> s;</span><br><span class="line">    fun(s);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*其他语段*/</span></span><br></pre></td></tr></table></figure></p>
 <p><strong>（3）从一个返回类型为非引用类型的函数返回一个对象</strong><br><strong>（4）用一个花括号初始化一个数组中的元素或一个聚合类中的成员</strong><br><strong>（5）类类型对分配的对象使用拷贝初始化</strong><br>标准库容器的insert,push对元素执行拷贝初始化，emplace直接初始化。</p>
 
-          
-        
       
     </div>
     
@@ -369,321 +367,38 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/05/默认初始化和值初始化/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Silly Fish">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar_wolf.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="sillyfish's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/05/默认初始化和值初始化/" itemprop="url">C++学习：默认初始化和值初始化</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-05T20:34:25+08:00">
-                2018-11-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C-学习/" itemprop="url" rel="index">
-                    <span itemprop="name">C++学习</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/c/" rel="tag"># c++</a>
           
-
+            <a href="/tags/学习/" rel="tag"># 学习</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>最近，在学习《C++ primer》过程中有点混淆<strong>默认初始化</strong>和<strong>值初始化</strong>两个概念，是由于早期在接触他们时，下意识的没有区分，甚至当作一回事。在最近的内容里，其区别渐渐凸显。书里面没有明确的定义区分，实际使用时要考虑的关键区别：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>默认初始化：</strong>对象可能产生未定义的值（是否绝对尚待确定，例如类类型（定义了默认构造函数）的默认初始化是否属于值初始化等）。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>值初始化</strong>：对象的值是确定（预设）的。</p>
-<h3 id="值初始化："><a href="#值初始化：" class="headerlink" title="值初始化："></a>值初始化：</h3><ol>
-<li><p>数组初始化时初始值数量小于维度，剩下的元素会进行值初始化；</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="keyword">int</span> <span class="built_in">array</span>[<span class="number">10</span>] = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;; &#125;	<span class="comment">//array[3]到array[9]值初始化为0</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>当我们不使用初始值定义一个局部静态变量；</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="keyword">static</span> <span class="keyword">int</span> n; &#125;	<span class="comment">//n值初始化为0</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>形如T()的表达式显示地请求值初始化；</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123; </span><br><span class="line">	<span class="built_in">std</span>::<span class="built_in">string</span> *pia1 = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>]();	<span class="comment">//动态分配10个值初始化为0的int</span></span><br><span class="line">	<span class="built_in">std</span>::<span class="built_in">string</span> *pia2 = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>];	<span class="comment">//动态分配10个未初始化的int</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h3 id="默认初始化："><a href="#默认初始化：" class="headerlink" title="默认初始化："></a>默认初始化：</h3><ol>
-<li><p>块作用域内不使用任何初始值定义一个非静态变量；</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="keyword">int</span> *ptr; &#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>类类型使用合成的默认构造函数；</p>
-</li>
-<li><p>类类型的成员没有在构造函数初始值列表中显示地初始化；</p>
-</li>
-</ol>
-<p><strong>（未完待续…）</strong></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/05/My first blog/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Silly Fish">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar_wolf.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="sillyfish's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/05/My first blog/" itemprop="url">First Blog</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-05T10:50:30+08:00">
-                2018-10-05
-              </time>
+              <a href="/2018/11/05/默认初始化和值初始化/" rel="next" title="C++学习：默认初始化和值初始化">
+                <i class="fa fa-chevron-left"></i> C++学习：默认初始化和值初始化
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p><strong>花了近一天的时间，算是有那么一点成果了，第一篇博客，也就是这篇。</strong></p>
-<p>从了解到使用github可以搭建自己的个人主页，再到了解hexo这至今不知道具体是个什么东西的东西，过程不算得曲折，但也不免波澜，好在皇天不负有心人。在电脑上搭建完成，然后在手机里确确实实可以访问的那一刻，还是蛮痛快的。至于其中细小的波澜，例如看到github仓库需要一个index.html文件时，一头雾水，花了两个小时去了解了html的一点简单语法，看到这么繁琐的网页编辑方式，真是哔了狗了：用这玩意儿搭建博客不是脑子进了水了吧，写个博客搞得像写BUG一样，不得累死球。好在有着强大的意志力（滑稽），直到后来了解到了hexo这么个东西，哦，原来是我自己想多了。进一步的学习，也才第一次了解到markdown所谓何物，学了点markdown最基本的语法，便有了这辈子第一篇博客。起初，是想写一点更有意义的东西的，比如什么学习心得什么的，也是太久没写过东西了，不知道写些什么就是一个严重的问题，便想逛逛别人的博客找找灵感，高大上的还真不少，瞬间脑淤血，想着自己也能高大上一回了。脑淤血结束，怎么写得高大上又是一个问题，初步了解了一下，光鲜亮丽的表面背后果然少不了繁琐的技术啊。这两大难题，一度又让我萌生了放弃写博客的念头，又好在皇天不负有心人，逛博客找灵感的时候在CSDN上发现了一位前人英烈战斗过的痕迹，一篇博客，一篇简单到不能再简单的博客，内容：<strong>“这是我的第一篇博客hahahaha”</strong>，看了下左侧的个人信息，第一篇也是唯一一篇。。。。。。<br>可见，革命的道路真是充满了艰难险阻啊，万事开头难还真的是难啊。To be or not to be,this is a question!</p>
-<p><strong>放一段代码吧,希望开个好头，致敬万恶之源的hello world</strong></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"hello world"</span> &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -693,10 +408,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -704,6 +420,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -724,8 +444,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -789,6 +518,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#拷贝构造函数"><span class="nav-number">1.</span> <span class="nav-text">拷贝构造函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#定义"><span class="nav-number">1.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#合成拷贝构造函数"><span class="nav-number">1.2.</span> <span class="nav-text">合成拷贝构造函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用拷贝构造函数的场景"><span class="nav-number">1.3.</span> <span class="nav-text">使用拷贝构造函数的场景</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -929,6 +674,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
