@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="拷贝构造函数定义一个构造函数的第一个参数是自身类类型的引用（通常为const的），且任何额外参数都有默认值，则此构造函数是拷贝构造函数：12345class Foo&amp;#123;public:    Foo();              //默认构造函数    Foo(const Foo&amp;amp;);    //拷贝构造函数&amp;#125;; 合成拷贝构造函数在我们没有为一个类定义一个拷贝构造函数（即">
+<meta name="description" content="拷贝构造函数定义一个构造函数的第一个参数是自身类类型的引用（通常为const的），且任何额外参数都有默认值，则此构造函数是拷贝构造函数：12345class Foo&amp;#123;public:    Foo();              //默认构造函数    Foo(const Foo&amp;amp;);    //拷贝构造函数&amp;#125;;">
 <meta name="keywords" content="c++,学习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C++学习：拷贝、赋值与销毁">
 <meta property="og:url" content="http://yoursite.com/2018/11/16/C-学习：拷贝、赋值与销毁/index.html">
 <meta property="og:site_name" content="sillyfish&#39;s blog">
-<meta property="og:description" content="拷贝构造函数定义一个构造函数的第一个参数是自身类类型的引用（通常为const的），且任何额外参数都有默认值，则此构造函数是拷贝构造函数：12345class Foo&amp;#123;public:    Foo();              //默认构造函数    Foo(const Foo&amp;amp;);    //拷贝构造函数&amp;#125;; 合成拷贝构造函数在我们没有为一个类定义一个拷贝构造函数（即">
+<meta property="og:description" content="拷贝构造函数定义一个构造函数的第一个参数是自身类类型的引用（通常为const的），且任何额外参数都有默认值，则此构造函数是拷贝构造函数：12345class Foo&amp;#123;public:    Foo();              //默认构造函数    Foo(const Foo&amp;amp;);    //拷贝构造函数&amp;#125;;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-16T14:23:21.325Z">
+<meta property="og:updated_time" content="2018-11-28T11:01:25.045Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++学习：拷贝、赋值与销毁">
-<meta name="twitter:description" content="拷贝构造函数定义一个构造函数的第一个参数是自身类类型的引用（通常为const的），且任何额外参数都有默认值，则此构造函数是拷贝构造函数：12345class Foo&amp;#123;public:    Foo();              //默认构造函数    Foo(const Foo&amp;amp;);    //拷贝构造函数&amp;#125;; 合成拷贝构造函数在我们没有为一个类定义一个拷贝构造函数（即">
+<meta name="twitter:description" content="拷贝构造函数定义一个构造函数的第一个参数是自身类类型的引用（通常为const的），且任何额外参数都有默认值，则此构造函数是拷贝构造函数：12345class Foo&amp;#123;public:    Foo();              //默认构造函数    Foo(const Foo&amp;amp;);    //拷贝构造函数&amp;#125;;">
 
 
 
@@ -343,6 +343,7 @@
 
       
         <h2 id="拷贝构造函数"><a href="#拷贝构造函数" class="headerlink" title="拷贝构造函数"></a>拷贝构造函数</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>一个<strong>构造函数</strong>的第一个参数是自身类类型的引用（通常为const的），且任何额外参数都有默认值，则此构造函数是拷贝构造函数：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Foo</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    Foo();              <span class="comment">//默认构造函数</span></span><br><span class="line">    Foo(<span class="keyword">const</span> Foo&amp;);    <span class="comment">//拷贝构造函数</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
 <h3 id="合成拷贝构造函数"><a href="#合成拷贝构造函数" class="headerlink" title="合成拷贝构造函数"></a>合成拷贝构造函数</h3><p>在我们没有为一个类定义一个拷贝构造函数（即使存在其他构造函数），编译器会合成一个拷贝构造函数。</p>
 <ul>
 <li>合成的拷贝构造函数可能是=deleted的，会阻止拷贝；</li>
@@ -495,7 +496,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -558,15 +559,9 @@
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
