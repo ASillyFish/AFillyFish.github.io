@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="c++,学习," />
+  <meta name="keywords" content="Blog相关," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="最近，在学习《C++ primer》过程中有点混淆默认初始化和值初始化两个概念，是由于早期在接触他们时，下意识的没有区分，甚至当作一回事。在最近的内容里，其区别渐渐凸显。书里面没有明确的定义区分，实际使用时要考虑的关键区别：&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;默认初始化：对象可能产生未定义的值（是否绝对尚待确定，例如类类型（定义了默认构造">
-<meta name="keywords" content="c++,学习">
+<meta name="description" content="前言 个人摸索建立这个Blog有一段时间了，实际使用过程中断断续续有一些新的调整与设置，有一些一步到位的调整难以一次记忆，为了后续使用和参考故在此记录下来。">
+<meta name="keywords" content="Blog相关">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C++学习：默认初始化和值初始化">
-<meta property="og:url" content="http://yoursite.com/2018/11/05/默认初始化和值初始化/index.html">
+<meta property="og:title" content="Blog使用记录">
+<meta property="og:url" content="http://yoursite.com/2018/12/11/Blog使用记录/index.html">
 <meta property="og:site_name" content="Sillyfish&#39;s blog">
-<meta property="og:description" content="最近，在学习《C++ primer》过程中有点混淆默认初始化和值初始化两个概念，是由于早期在接触他们时，下意识的没有区分，甚至当作一回事。在最近的内容里，其区别渐渐凸显。书里面没有明确的定义区分，实际使用时要考虑的关键区别：&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;默认初始化：对象可能产生未定义的值（是否绝对尚待确定，例如类类型（定义了默认构造">
+<meta property="og:description" content="前言 个人摸索建立这个Blog有一段时间了，实际使用过程中断断续续有一些新的调整与设置，有一些一步到位的调整难以一次记忆，为了后续使用和参考故在此记录下来。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-28T10:57:40.124Z">
+<meta property="og:updated_time" content="2018-12-12T13:14:17.476Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="C++学习：默认初始化和值初始化">
-<meta name="twitter:description" content="最近，在学习《C++ primer》过程中有点混淆默认初始化和值初始化两个概念，是由于早期在接触他们时，下意识的没有区分，甚至当作一回事。在最近的内容里，其区别渐渐凸显。书里面没有明确的定义区分，实际使用时要考虑的关键区别：&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;默认初始化：对象可能产生未定义的值（是否绝对尚待确定，例如类类型（定义了默认构造">
+<meta name="twitter:title" content="Blog使用记录">
+<meta name="twitter:description" content="前言 个人摸索建立这个Blog有一段时间了，实际使用过程中断断续续有一些新的调整与设置，有一些一步到位的调整难以一次记忆，为了后续使用和参考故在此记录下来。">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/11/05/默认初始化和值初始化/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/12/11/Blog使用记录/"/>
 
 
 
 
 
-  <title>C++学习：默认初始化和值初始化 | Sillyfish's blog</title>
+  <title>Blog使用记录 | Sillyfish's blog</title>
   
 
 
@@ -253,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/05/默认初始化和值初始化/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/11/Blog使用记录/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Sillyfish">
@@ -270,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">C++学习：默认初始化和值初始化</h1>
+          <h1 class="post-title" itemprop="name headline">Blog使用记录</h1>
         
 
         <div class="post-meta">
@@ -282,8 +282,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-05T20:34:25+08:00">
-                2018-11-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-11T21:09:42+08:00">
+                2018-12-11
               </time>
             
 
@@ -305,8 +305,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C-学习/" itemprop="url" rel="index">
-                    <span itemprop="name">C++学习</span>
+                  <a href="/categories/Blog相关/" itemprop="url" rel="index">
+                    <span itemprop="name">Blog相关</span>
                   </a>
                 </span>
 
@@ -342,28 +342,15 @@
       
 
       
-        <p>最近，在学习《C++ primer》过程中有点混淆<strong>默认初始化</strong>和<strong>值初始化</strong>两个概念，是由于早期在接触他们时，下意识的没有区分，甚至当作一回事。在最近的内容里，其区别渐渐凸显。书里面没有明确的定义区分，实际使用时要考虑的关键区别：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>默认初始化：</strong>对象可能产生未定义的值（是否绝对尚待确定，例如类类型（定义了默认构造函数）的默认初始化是否属于值初始化等）。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>值初始化</strong>：对象的值是确定（预设）的。<br><a id="more"></a></p>
-<h3 id="值初始化："><a href="#值初始化：" class="headerlink" title="值初始化："></a>值初始化：</h3><ol>
-<li><p>数组初始化时初始值数量小于维度，剩下的元素会进行值初始化；</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="keyword">int</span> <span class="built_in">array</span>[<span class="number">10</span>] = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;; &#125;	<span class="comment">//array[3]到array[9]值初始化为0</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>当我们不使用初始值定义一个局部静态变量；</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="keyword">static</span> <span class="keyword">int</span> n; &#125;	<span class="comment">//n值初始化为0</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>形如T()的表达式显示地请求值初始化；</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123; </span><br><span class="line">	<span class="built_in">std</span>::<span class="built_in">string</span> *pia1 = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>]();	<span class="comment">//动态分配10个值初始化为0的int</span></span><br><span class="line">	<span class="built_in">std</span>::<span class="built_in">string</span> *pia2 = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>];	<span class="comment">//动态分配10个未初始化的int</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h3 id="默认初始化："><a href="#默认初始化：" class="headerlink" title="默认初始化："></a>默认初始化：</h3><ol>
-<li><p>块作用域内不使用任何初始值定义一个非静态变量；</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="keyword">int</span> *ptr; &#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>类类型使用合成的默认构造函数；</p>
-</li>
-<li><p>类类型的成员没有在构造函数初始值列表中显示地初始化；</p>
-</li>
-</ol>
-<p><strong>（未完待续…）</strong></p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>个人摸索建立这个Blog有一段时间了，实际使用过程中断断续续有一些新的调整与设置，有一些一步到位的调整难以一次记忆，为了后续使用和参考故在此记录下来。</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="兼容Mathjax-数学公式渲染"><a href="#兼容Mathjax-数学公式渲染" class="headerlink" title="兼容Mathjax(数学公式渲染)"></a>兼容Mathjax(数学公式渲染)</h2><p><strong> 更换渲染引擎 </strong><br>1.<code>npm uninstall hexo-renderer-marked --save</code><br>2.<code>npm install hexo-renderer-kramed --save</code><br>第一条命令用于卸载 hexo-renderer-marked（注意，如果你使用了其他的渲染插件，请卸载对应的插件），它是hexo自带的Markdown渲染引擎。<br>第二条命令用于安装 hexo-renderer-kramed 插件，这个渲染插件针对MathJax支持进行了改进。<br><strong> 修改主题配置文件 </strong><br>进入到主题目录，找到_config.yml配置文件，把mathjax默认的false修改为true，具体如下：<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># MathJax Support</span></span><br><span class="line"><span class="attr">mathjax:</span></span><br><span class="line"><span class="attr">    enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    per_page:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
+<p><strong> 修改front-mater </strong><br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">index.html</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2016</span><span class="bullet">-12</span><span class="bullet">-28</span> <span class="number">21</span><span class="string">:01:30</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="attr">mathjax:</span> <span class="literal">true</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure></p>
+<p><strong> 解决行内渲染bug </strong><br>博客根目录，找到node_modules\kramed\lib\rules\inline.js，把第11行的escape变量的值做相应的修改(取消对\,{,}的转义)：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//  escape: /^\\([\\`*&#123;&#125;\[\]()#$+\-.!_&gt;])/,</span></span><br><span class="line">  <span class="built_in">escape</span>: <span class="regexp">/^\\([`*\[\]()#$+\-.!_&gt;])/</span></span><br></pre></td></tr></table></figure></p>
+<p>修改第20行的em变量：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//  em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span></span><br><span class="line">  em: <span class="regexp">/^\*((?:\*\*|[\s\S])+?)\*(?!\*)/</span></span><br></pre></td></tr></table></figure></p>
+<p>注：访问<a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">mathjax</a>参考更多使用语法。</p>
 
       
     </div>
@@ -381,9 +368,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/c/" rel="tag"># c++</a>
-          
-            <a href="/tags/学习/" rel="tag"># 学习</a>
+            <a href="/tags/Blog相关/" rel="tag"># Blog相关</a>
           
         </div>
       
@@ -396,8 +381,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/05/My first blog/" rel="next" title="First Blog">
-                <i class="fa fa-chevron-left"></i> First Blog
+              <a href="/2018/12/10/（算法）等概率随机生成m个不重复的数/" rel="next" title="（算法）等概率随机生成m个不重复的数">
+                <i class="fa fa-chevron-left"></i> （算法）等概率随机生成m个不重复的数
               </a>
             
           </div>
@@ -405,10 +390,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/16/C-学习：拷贝、赋值与销毁/" rel="prev" title="C++学习：拷贝、赋值与销毁">
-                C++学习：拷贝、赋值与销毁 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -544,7 +525,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#值初始化："><span class="nav-number">1.</span> <span class="nav-text">值初始化：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#默认初始化："><span class="nav-number">2.</span> <span class="nav-text">默认初始化：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#兼容Mathjax-数学公式渲染"><span class="nav-number">2.</span> <span class="nav-text">兼容Mathjax(数学公式渲染)</span></a></li></ol></div>
             
 
           </div>
@@ -745,6 +726,26 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
