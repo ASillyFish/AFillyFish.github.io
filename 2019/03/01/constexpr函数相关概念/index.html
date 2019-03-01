@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Sillyfish&#39;s blog">
 <meta property="og:description" content="constexpr函数（constexpr function）的使用频率相对较少，与之相关的概念的理解与记忆也十分的模糊，主要涉及字面值常量、聚合类等，在此总结在一起。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-01T14:00:52.556Z">
+<meta property="og:updated_time" content="2019-03-01T14:06:40.497Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="constexpr函数相关概念">
 <meta name="twitter:description" content="constexpr函数（constexpr function）的使用频率相对较少，与之相关的概念的理解与记忆也十分的模糊，主要涉及字面值常量、聚合类等，在此总结在一起。">
@@ -348,9 +348,9 @@
 <li>所有的成员都是public的。</li>
 <li>没有定义任何的构造函数。</li>
 <li>没有类内初始值。</li>
-<li>没有基类，也没有virtual函数。<br>例如，下面的类是一个聚合类：<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Data</span> &#123;</span></span><br><span class="line">	<span class="keyword">int</span> ival;</span><br><span class="line">	<span class="built_in">string</span> s;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-</li>
+<li>没有基类，也没有virtual函数。</li>
 </ul>
+<p>例如，下面的类是一个聚合类：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Data</span> &#123;</span></span><br><span class="line">	<span class="keyword">int</span> ival;</span><br><span class="line">	<span class="built_in">string</span> s;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
 <p>我们可以提供一个花括号括起来的成员初始值列表来初始化聚合类的数据成员：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// vall.ival = 0; vall.s = string("Anna")</span></span><br><span class="line">Data vall = &#123; <span class="number">0</span>, <span class="string">"Anna"</span> &#125;;</span><br></pre></td></tr></table></figure></p>
 <p>花括号中初始值的顺序必须与成员声明的顺序一致，如果初始值列表中的元素个数少于类的成员数量，则靠后的成员被值初始化，初始值列表的元素个数绝对不能超过类的成员数量。</p>
 
